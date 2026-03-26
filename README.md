@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     %% Entradas
     Lead((Lead)) -->|Mensaje Entrante| Webhook[Webhook en n8n]
@@ -32,3 +33,4 @@ graph TD
     style OpenAICall fill:#bbf,stroke:#333,stroke-width:2px
     style BatchAPI fill:#bbf,stroke:#333,stroke-width:2px
     style UpdateKommo fill:#bfb,stroke:#333,stroke-width:2px
+```
