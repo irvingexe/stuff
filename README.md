@@ -28,9 +28,9 @@ graph TD
     GatherLogs --> BatchAPI[OpenAI Batch API <br/> 50% OFF]
     BatchAPI --> Report[Generar Reporte de <br/>Conversión y Métricas]
     
-    %% Estilos (Opcional para renderizado)
-    style Webhook fill:#f9f,stroke:#333,stroke-width:2px
-    style OpenAICall fill:#bbf,stroke:#333,stroke-width:2px
-    style BatchAPI fill:#bbf,stroke:#333,stroke-width:2px
-    style UpdateKommo fill:#bfb,stroke:#333,stroke-width:2px
+    %% SECCIÓN DE ESTILOS CORREGIDA PARA LEGIBILIDAD (Texto en Negro)
+    style Webhook fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    style OpenAICall fill:#bbf,stroke:#333,stroke-width:2px,color:#000
+    style BatchAPI fill:#bbf,stroke:#333,stroke-width:2px,color:#000
+    style UpdateKommo fill:#bfb,stroke:#333,stroke-width:2px,color:#000
 ```
