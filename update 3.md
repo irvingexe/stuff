@@ -18,14 +18,14 @@ graph TD
     Debounce -- "Sí" --> GetHistory[Recuperar Mensajes <br/>No Procesados de DB]
     GetHistory --> Triage{Filtro Inicial <br/>Regex / n8n}
     
-    Triage -- "Mensaje Simple" --> Ignore[Respuesta Estática / <br/>Marcar en DB]
+    Triage -- "Mensaje Simple" --> Ignore[Respuesta estática opcional / <br/>Marcar en DB]
     Triage -- "Mensaje Complejo" --> GetContext[Extraer Estado y <br/>IA_Contexto_Resumen de Kommo]
 
     %% Capa 1: Procesamiento IA Directo
     GetContext --> OpenAICall[OpenAI API <br/>gpt-4o-mini]
     
     %% Capa 2: Salida y Acciones Paralelas
-    OpenAICall --> |Prompt + Resumen + Historial| JSONResponse[Salida JSON <br/>Mensaje + Datos Extraídos]
+    OpenAICall --> |Prompt + Resumen + Últimos mensajes sin procesar| JSONResponse[Salida JSON <br/>Datos Extraídos + analisis de sentimiento + Mensaje opcional]
     
     JSONResponse --> MarkDone[Marcar Mensajes como <br/>Procesados en DB]
     JSONResponse --> UpdateKommo[Actualizar IA_Contexto_Resumen <br/>y Campos en Kommo]
