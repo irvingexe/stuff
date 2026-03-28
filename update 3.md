@@ -1,8 +1,8 @@
 ```mermaid
+---
+title: Arquitectura de calificación de leads, atención al cliente y captura de datos de venta
+---
 graph TD
-    title[<b>Arquitectura de Automatización de Ventas AI</b>]
-    title --- Lead
-
     %% Entradas y Persistencia
     Lead((Lead)) -->|Mensajes Múltiples| Webhook[Webhook en n8n]
     
