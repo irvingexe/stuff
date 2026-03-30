@@ -1,6 +1,6 @@
 ```mermaid
 ---
-title: Arquitectura de Calificación, Venta y Auditoría IA (V5 Context-Aware)
+title: Arquitectura de calificación de leads, atención al cliente y captura de datos de venta
 ---
 graph TD
     %% Entradas y Persistencia
