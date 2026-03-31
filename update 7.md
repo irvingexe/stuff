@@ -25,7 +25,7 @@ graph TD
     %% Capa 1: RAG Dinámico Condicional
     GetContext --> CheckAuto{¿En etapas de <br/>atención automática? <br/><b>💰 Responder solo si es necesario<b/>}
     
-    CheckAuto -- "No" --> OpenAICall[OpenAI API <br/>gpt-4o-mini]
+    CheckAuto -- "No" --> OpenAICall[Agente AI]
     
     CheckAuto -- "Sí" --> DetectIntent{¿Menciona <br/>Producto/Duda?}
     
